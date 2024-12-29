@@ -4,13 +4,27 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FizzBuzzTest {
  @Test
-    void testFizzBuzzReturnsFizzForMultipleOf3() {
+    void testFizzBuzzReturnsFizzForM1() {
         //Given
      int nb =1;
      String expected = "1";
      //when
-      String aclual=FizzBuzz.de(3);
+      String aclual=FizzBuzz.de(nb);
       //then
      assertEquals(expected, aclual);
     }
+
+
+
+    @Test
+    void testFizzBuzzReturnsFizzForM2() {
+        //Given
+        int nb =2;
+        String expected = "2";
+        //when
+        String aclual=FizzBuzz.de(nb);
+        //then
+        assertEquals(expected, aclual);
+    }
+
 }
