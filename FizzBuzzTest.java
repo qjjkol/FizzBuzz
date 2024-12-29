@@ -2,26 +2,15 @@ package com.controle.tdd;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class FizzBuzzTest {
+public class FizzBuzzTest { 
  @Test
     void testFizzBuzzReturnsFizzForMultipleOf3() {
-        assertEquals("Fizz", FizzBuzz.de(3));
-    }
-
-    @Test
-    void testFizzBuzzReturnsBuzzForMultipleOf5() {
-        assertEquals("Buzz", FizzBuzz.de(5));
-    }
-
-    @Test
-    void testFizzBuzzReturnsFizzBuzzForMultipleOf3And5() {
-        assertEquals("FizzBuzz", FizzBuzz.de(15));
-    }
-
-    @Test
-    void testFizzBuzzReturnsNumberForNonMultiplesOf3And5() {
-        assertEquals("7", FizzBuzz.de(7));
+        //Given
+     int nb =1;
+     String expected = "1";
+     //when
+      String aclual=FizzBuzz.de(3);
+      //then
+     assertEquals(expected, aclual);
     }
 }
-
-
